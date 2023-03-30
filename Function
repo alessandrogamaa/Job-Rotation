@@ -1,0 +1,60 @@
+/*
+1) O valor final da variável SOMA será 91.
+Cada iteração do loop adiciona o valor de K à variável SOMA. Na primeira iteração, K é incrementado de 0 para 1 e SOMA é atualizado para 1. Na segunda iteração, K é incrementado de 1 para 2 e SOMA é atualizado para 3. Esse processo continua até que K seja igual a INDICE, que é 13. Na 13ª iteração, K é incrementado de 12 para 13 e SOMA é atualizado para 91.
+
+2)Segue abaixo uma possível solução em JavaScript para calcular a sequência de Fibonacci e verificar se um número pertence a ela:
+*/
+
+function verificaFibonacci(numero) {
+  let a = 0;
+  let b = 1;
+
+  while (b < numero) {
+    const temp = b;
+    b = a + b;
+    a = temp;
+  }
+
+  if (b === numero) {
+    console.log(`${numero} pertence à sequência de Fibonacci`);
+  } else {
+    console.log(`${numero} não pertence à sequência de Fibonacci`);
+  }
+}
+
+// Exemplo de uso:
+verificaFibonacci(13); // imprime "13 pertence à sequência de Fibonacci"
+verificaFibonacci(25); // imprime "25 pertence à sequência de Fibonacci"
+verificaFibonacci(17); // imprime "17 não pertence à sequência de Fibonacci"
+
+/*
+3)
+a) O próximo elemento seria 9.
+b) O próximo elemento seria 128.
+c) O próximo elemento seria 49.
+d) O próximo elemento seria 100.
+e) O próximo elemento seria 13.
+f) O próximo elemento seria 20.
+
+4) Quando os veículos se cruzarem na rodovia, estarão exatamente a meio caminho entre Ribeirão Preto e Franca. Como a distância entre as cidades é de 100km, o ponto de encontro estará a 50km de cada cidade.
+
+No entanto, o caminhão terá que passar por dois pedágios que atrasarão sua chegada. Como cada pedágio atrasa o caminhão em 5 minutos, ele chegará 10 minutos depois do carro no ponto de encontro. Nesse tempo, o carro continuará a se deslocar a 110 km/h, percorrendo uma distância adicional de 18,33 km (calculada como (110 km/h) * (10/60) h). Isso significa que, quando o caminhão chegar ao ponto de encontro, estará a uma distância de 31,67 km de Ribeirão Preto e o carro estará a uma distância de 68,33 km de Ribeirão Preto. Portanto, o carro estará mais próximo da cidade de Ribeirão Preto.
+
+5) Segue abaixo uma possível solução em JavaScript: 
+*/
+
+
+function inverteString(str) {
+  let reversed = '';
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+
+  return reversed;
+}
+
+// Exemplo de uso:
+const minhaString = 'Hello, world!';
+const minhaStringInvertida = inverteString(minhaString);
+console.log(minhaStringInvertida); // imprime "!dlrow ,olleH"
