@@ -40,21 +40,15 @@ f) O próximo elemento seria 20.
 
 No entanto, o caminhão terá que passar por dois pedágios que atrasarão sua chegada. Como cada pedágio atrasa o caminhão em 5 minutos, ele chegará 10 minutos depois do carro no ponto de encontro. Nesse tempo, o carro continuará a se deslocar a 110 km/h, percorrendo uma distância adicional de 18,33 km (calculada como (110 km/h) * (10/60) h). Isso significa que, quando o caminhão chegar ao ponto de encontro, estará a uma distância de 31,67 km de Ribeirão Preto e o carro estará a uma distância de 68,33 km de Ribeirão Preto. Portanto, o carro estará mais próximo da cidade de Ribeirão Preto.
 
-5) Segue abaixo uma possível solução em JavaScript: 
+5) Segue abaixo uma possível solução: 
 */
 
 
+
 function inverteString(str) {
-  let reversed = '';
-
+  let newString = '';
   for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
+    newString += str[i];
   }
-
-  return reversed;
+  return newString;
 }
-
-// Exemplo de uso:
-const minhaString = 'Hello, world!';
-const minhaStringInvertida = inverteString(minhaString);
-console.log(minhaStringInvertida); // imprime "!dlrow ,olleH"
